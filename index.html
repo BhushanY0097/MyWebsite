@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhushan Yawalkar - Desktop Support Engineer</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: url('tech-background.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    header img {
+      width: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+      transition: transform 0.5s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    nav {
+      background: #2c3e50;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-in-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✔ ";
+      color: #27ae60;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Button */
+    .resume-btn {
+      display: inline-block;
+      background: #27ae60;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background: #2ecc71;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="profile.jpg" alt="Bhushan Yawalkar">
+  <h1>Bhushan Yawalkar</h1>
+  <p>Desktop Support Engineer</p>
+  <p>📍 Triveni Nagar, Nigdi, Pimpri | 📧 bhushanyawalkar@gmail.com | 📞 +91 9765430097</p>
+  <a href="BhushanCV_DSE.pdf" class="resume-btn" download>Download Resume</a>
+</header>
+
+<nav>
+  <a href="#summary">Summary</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="summary">
+  <h2>Professional Summary</h2>
+  <p>Highly analytical and detail-oriented IT Professional with 2.5 years of experience in system administration and dedicated Desktop/Application Support (Tier 1). Proven success in maintaining 24x7 system uptime and providing robust troubleshooting for critical infrastructure. Expertise includes OS installation (Windows/Linux) and hardware setup.</p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li>Desktop/Application Support, Troubleshooting, Ticketing Tool Usage, Remote Software Installation</li>
+    <li>Windows OS, Cent OS, BOSS (Linux) Installation & Configuration</li>
+    <li>MySQL, Java</li>
+    <li>Teamwork, Time Management, Analytical, Detail-Oriented</li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+  <h3>System Support Engineer - CDAC Pune (01/2023 - 10/2025)</h3>
+  <ul>
+    <li>Administered and maintained high-availability BOSS servers for national-level examinations.</li>
+    <li>Delivered Desktop/Application support and troubleshooting for client issues.</li>
+    <li>Executed software installation for critical platforms (Win OS, Cent OS, SQL, VS, Java).</li>
+    <li>Coordinated with ISP and managed network/LAN, printers, and peripheral devices.</li>
+  </ul>
+
+  <h3>Data Analyst - Kolbro Group (02/2019 - 02/2022)</h3>
+  <ul>
+    <li>Led technical workflow for a team of 10-20 persons in municipal property tax projects.</li>
+    <li>Maintained detailed asset records and allocation sheets for IT hardware assets.</li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li>PG Diploma, CDAC Pune (03/2022 - 09/2022)</li>
+    <li>B.E., Electronics & Communication, Nagpur University (03/2012 - 08/2015)</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📧 Email: <a href="mailto:bhushanyawalkar@gmail.com">bhushanyawalkar@gmail.com</a></p>
+  <p>📞 Phone: +91 9765430097</p>
+  <p>🌍 Languages: English, Hindi, Marathi</p>
+</section>
+
+<footer>
+  <p>© 2025 Bhushan Yawalkar | Designed with ❤️</p>
+</footer>
+
+<script>
+  // Scroll animation
+  window.addEventListener("scroll", function() {
+    document.querySelectorAll("section").forEach(sec => {
+      if(sec.getBoundingClientRect().top < window.innerHeight - 100) {
+        sec.classList.add("visible");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
